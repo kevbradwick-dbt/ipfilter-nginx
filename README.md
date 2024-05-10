@@ -8,4 +8,4 @@ This is an example repo that uses Nginx to implement an ipfilter.
 
 ## Run
 
-    docker run --rm -p 8000:80 -e IP_DENY_LIST="172.17.0.1" ipfilter-nginx:latest
+    docker run --rm -p 8000:80 -e IP_ALLOW_LIST="172.17.0.1/32" ipfilter-nginx:latest
